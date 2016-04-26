@@ -1,5 +1,0 @@
-Brugere (medarbejdere og admin) evt. kunder
-(kunder)
-Reservedele
-?Maskintyper?
-Reperationer
