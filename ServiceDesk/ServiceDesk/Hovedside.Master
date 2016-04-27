@@ -11,6 +11,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
+        <a runat="server" href="~/Sider/Kunder.aspx">Kunder</a>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>

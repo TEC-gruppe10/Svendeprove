@@ -98,6 +98,15 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Hovedside.Master" />
+    <Content Include="Sider\Forside.aspx" />
+    <Content Include="Sider\Login.aspx" />
+    <Content Include="Sider\Kunder.aspx" />
+    <Content Include="Sider\Reservedele.aspx" />
+    <Content Include="Sider\Medarbejdere.aspx" />
+    <Content Include="Sider\Maskintyper.aspx" />
+    <Content Include="Sider\RedigerProfil.aspx" />
+    <Content Include="Sider\MineReparationer.aspx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -111,7 +120,70 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Hovedside.Master.cs">
+      <DependentUpon>Hovedside.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hovedside.Master.designer.cs">
+      <DependentUpon>Hovedside.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sider\Forside.aspx.cs">
+      <DependentUpon>Forside.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sider\Forside.aspx.designer.cs">
+      <DependentUpon>Forside.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sider\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sider\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sider\Kunder.aspx.cs">
+      <DependentUpon>Kunder.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sider\Kunder.aspx.designer.cs">
+      <DependentUpon>Kunder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sider\Reservedele.aspx.cs">
+      <DependentUpon>Reservedele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sider\Reservedele.aspx.designer.cs">
+      <DependentUpon>Reservedele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sider\Medarbejdere.aspx.cs">
+      <DependentUpon>Medarbejdere.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sider\Medarbejdere.aspx.designer.cs">
+      <DependentUpon>Medarbejdere.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sider\Maskintyper.aspx.cs">
+      <DependentUpon>Maskintyper.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sider\Maskintyper.aspx.designer.cs">
+      <DependentUpon>Maskintyper.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sider\RedigerProfil.aspx.cs">
+      <DependentUpon>RedigerProfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sider\RedigerProfil.aspx.designer.cs">
+      <DependentUpon>RedigerProfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sider\MineReparationer.aspx.cs">
+      <DependentUpon>MineReparationer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sider\MineReparationer.aspx.designer.cs">
+      <DependentUpon>MineReparationer.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
