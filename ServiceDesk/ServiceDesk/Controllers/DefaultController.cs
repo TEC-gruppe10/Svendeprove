@@ -8,8 +8,17 @@ namespace ServiceDesk.Controllers
 {
     public class DefaultController : Controller
     {
+        private const string DB_CONN = "server=192.168.1.253;uid=root;pwd=Passw0rd;database=servicedesk;";
+
         public ActionResult Index()
         {
+            try
+            {
+                var conn = new MySql.Data.MySqlClient.MySqlConnection();
+                conn.ConnectionString = DB_CONN;
+                conn.Open();
+            }
+            catch (Exception) { }
             return View();
         }
 
