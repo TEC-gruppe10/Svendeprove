@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Data;
+using System.Drawing;
 using System.Text;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Web.UI.WebControls;
+using System.Collections.Generic;
 
 namespace ServiceDesk
 {
@@ -14,46 +16,19 @@ namespace ServiceDesk
             if (!this.IsPostBack)
             {
                 //Populating a DataTable from database.
-                DataTable dt = this.GetData();
-
-                //Building an HTML string.
-                StringBuilder html = new StringBuilder();
-
-                //Table start.
-                html.Append("<table border = '1'>");
-
-                //Building the Header row.
-                html.Append("<tr>");
-                foreach (DataColumn column in dt.Columns)
+                DataTable kunder = this.GetList();
+                GridView1.DataSource = kunder;
+                GridView1.DataBind();
+                int[,] medarbejdere = new int[kunder.Rows.Count, 3];
+                for (int i = 0; i < kunder.Rows.Count; i++)
                 {
-                    html.Append("<th>");
-                    html.Append(column.ColumnName);
-                    html.Append("</th>");
+                    medarbejdere[i, 0] = Convert.ToInt32(kunder.Rows.Find("ID")[i].ToString());
+                    
                 }
-                html.Append("</tr>");
-
-                //Building the Data rows.
-                foreach (DataRow row in dt.Rows)
-                {
-                    html.Append("<tr>");
-                    foreach (DataColumn column in dt.Columns)
-                    {
-                        html.Append("<td>");
-                        html.Append(row[column.ColumnName]);
-                        html.Append("</td>");
-                    }
-                    html.Append("</tr>");
-                }
-
-                //Table end.
-                html.Append("</table>");
-
-                //Append the HTML string to Placeholder.
-                //KundeTabel.Controls.Add(new Literal { Text = html.ToString() });
             }
         }
 
-        private DataTable GetData()//skal rettes til med ip og login. Evt kalde stored precedure
+        private DataTable GetList()//skal rettes til med ip og login. Evt kalde stored precedure
         {
             /*string constr = ConfigurationManager.ConnectionStrings["constr"].ConnectionString;
             using (SqlConnection con = new SqlConnection(constr))
@@ -74,6 +49,40 @@ namespace ServiceDesk
             */
             DataTable dt = new DataTable();
             return dt;
+        }
+        private DataTable GetNumbers()//Skal rettes til med ip og login. Evt kalde en stored procedure
+        {
+            DataTable dt = new DataTable();
+            return dt;
+        }
+
+        protected void OnRowDataBound(object sender, System.Web.UI.WebControls.GridViewRowEventArgs e)
+        {
+            if (e.Row.RowType == DataControlRowType.DataRow)
+            {
+                e.Row.Attributes["onclick"] = Page.ClientScript.GetPostBackClientHyperlink(GridView1, "Select$" + e.Row.RowIndex);
+                e.Row.ToolTip = "Click to select this row.";
+                mMedarbejder.Text = "Hello";
+                uMedarbejder.Text = "Hello";
+            }
+        }
+
+        protected void OnSelectedIndexChanged(object sender, EventArgs e)
+        {
+            foreach (GridViewRow row in GridView1.Rows)
+            {
+                if (row.RowIndex == GridView1.SelectedIndex)
+                {
+                    row.BackColor = ColorTranslator.FromHtml("#A1DCF2");
+                    row.ToolTip = string.Empty;
+                    
+                }
+                else
+                {
+                    row.BackColor = ColorTranslator.FromHtml("#FFFFFF");
+                    row.ToolTip = "Click to select this row.";
+                }
+            }
         }
     }
 }
