@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace ServiceDesk.extra_code
+namespace ServiceDesk
 {
     public static class Functions
     {

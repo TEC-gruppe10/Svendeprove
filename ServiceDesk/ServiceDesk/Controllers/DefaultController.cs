@@ -28,5 +28,10 @@ namespace ServiceDesk.Controllers
         {
             return View();
         }
+
+        public ActionResult Brugere()
+        {
+            return View();
+        }
     }
 }
