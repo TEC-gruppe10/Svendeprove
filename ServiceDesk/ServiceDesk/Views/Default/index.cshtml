@@ -5,7 +5,11 @@
 
 <h2>index</h2>
 
-@foreach (var x in ViewBag.users)
+@for (int i = 0; i < ViewBag.users.Count; i++)
 {
-    <p>@x</p>
+    foreach (var x in ViewBag.users[i])
+    {
+        <p>@x</p>
+    }
+    <br />
 }

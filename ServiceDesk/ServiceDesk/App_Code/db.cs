@@ -18,22 +18,40 @@ namespace ServiceDesk
                 return string.Empty;
         }
 
-        public static string[] GetValuesAsStrings(string sqlcmd, int columns)
+        private static MySqlConnection DefaultConnection()
         {
             var conn = new MySqlConnection();
-            var cmd = new MySqlCommand(sqlcmd, conn);
             conn.ConnectionString = DB_CONN;
-            conn.Open();
-            var reader = cmd.ExecuteReader();
-            var array = new string[columns];
-            while (reader.Read())
+
+            return conn;
+        }
+
+        public static List<string[]> GetValuesAsStrings(string sqlcmd, int columns)
+        {            
+            using (var conn = DefaultConnection())
             {
-                for (int i = 0; i < columns; i++)
+                var cmd = new MySqlCommand(sqlcmd, conn);                
+                conn.Open();
+
+                var reader = cmd.ExecuteReader();
+                if (!reader.HasRows)
+                    return null;
+
+                var list = new List<string[]>();
+
+                while (reader.Read())
                 {
-                    array[i] = SafeGetString(reader, i);
+                    var array = new string[columns];
+                    for (int i = 0; i < columns; i++)
+                    {
+                        array[i] = SafeGetString(reader, i);
+                    }
+                    list.Add(array);
                 }
+
+                reader.Close();
+                return list;
             }
-            return array;
         }
     }
 }
