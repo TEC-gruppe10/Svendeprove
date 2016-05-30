@@ -172,6 +172,7 @@
     <Content Include="Views\Default\Kunder.cshtml" />
     <Content Include="Views\Default\Maskintyper.cshtml" />
     <Content Include="Views\Default\Reservedele.cshtml" />
+    <Content Include="Views\Default\Brugere.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
