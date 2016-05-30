@@ -53,5 +53,14 @@ namespace ServiceDesk
                 return list;
             }
         }
+
+        public static void SQLNonQuery(string sqlcmd)
+        {
+            var conn = new MySqlConnection();
+            var cmd = new MySqlCommand(sqlcmd, conn);
+            conn.ConnectionString = DB_CONN;
+            conn.Open();
+            cmd.ExecuteNonQuery();
+        }
     }
 }
