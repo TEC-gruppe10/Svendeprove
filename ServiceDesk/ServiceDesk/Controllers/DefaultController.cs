@@ -29,8 +29,9 @@ namespace ServiceDesk.Controllers
             return View();
         }
 
-        public ActionResult Brugere()
+        public ActionResult Ansatte()
         {
+            ViewBag.ansatte = db.GetValuesAsStrings("SELECT `id`, `fornavn`, `efternavn`, `telefon`, `type`, `email` FROM `bruger` LIMIT 0, 100", 6);
             return View();
         }
     }

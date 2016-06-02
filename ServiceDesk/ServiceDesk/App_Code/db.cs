@@ -53,7 +53,7 @@ namespace ServiceDesk
                 return list;
             }
         }
-
+        
         public static void SQLNonQuery(string sqlcmd)
         {
             var conn = new MySqlConnection();
