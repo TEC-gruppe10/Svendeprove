@@ -1,0 +1,1345 @@
+@charset "UTF-8";
+@import url(reset.css);
+/*------------------------------------*    COLORS
+\*------------------------------------*/
+/*------------------------------------*    FONTS
+\*------------------------------------*/
+/*------------------------------------*    SIZING
+\*------------------------------------*/
+/* line 71, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12,
+.col-13,
+.col-14 {
+  float: left;
+  border-collapse: collapse; }
+
+/* Main Widths */
+/* line 79, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-1 {
+  width: 100%; }
+
+/* line 83, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-2 {
+  width: 80%; }
+
+/* line 87, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-3 {
+  width: 75%; }
+
+/* line 91, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-4 {
+  width: 66.66%; }
+
+/* line 95, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-5 {
+  width: 60%; }
+
+/* line 99, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-6 {
+  width: 50%; }
+
+/* line 103, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-7 {
+  width: 40%; }
+
+/* line 107, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-8 {
+  width: 33.33%; }
+
+/* line 111, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-9 {
+  width: 25%; }
+
+/* line 115, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-10 {
+  width: 20%; }
+
+/* line 119, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-11 {
+  width: 16.6666666667%; }
+
+/* line 123, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-12 {
+  width: 14.2857142857%; }
+
+/* line 127, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-13 {
+  width: 12.5%; }
+
+/* line 131, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-14 {
+  width: 11.1111111111%; }
+
+/* line 135, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-15 {
+  width: 10%; }
+
+/* line 139, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-16 {
+  width: 9.09090909091%; }
+
+/* line 143, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.col-17 {
+  width: 8.33%; }
+
+/* line 158, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+main,
+footer,
+#TopMenu {
+  max-width: 1055px;
+  width: calc(100% - 30px);
+  margin: 0 auto; }
+
+/*------------------------------------*    BODY
+\*------------------------------------*/
+/* line 169, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+body {
+  background: fixed 50%/cover;
+  font: 400 100%/1 "Open Sans";
+  color: #444;
+  text-rendering: optimizeLegibility; }
+
+/* line 176, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+body.black {
+  background-image: url(http://nepharia.net/static/img/bgs/wallpaper-2748729.png); }
+
+/* line 180, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+body.dark {
+  background-color: #1f1e1e; }
+
+/* line 184, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+body.light {
+  background-color: #ebf0f0; }
+
+/* line 188, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+img {
+  max-height: 100%;
+  max-width: 100%; }
+
+/*------------------------------------*    GRID
+\*------------------------------------*/
+/* line 198, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.grid {
+  display: flex;
+  box-sizing: border-box; }
+  /* line 201, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .grid .grid60 {
+    flex: 0 0 60%; }
+  /* line 204, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .grid .grid50 {
+    flex: 0 0 50%; }
+  /* line 207, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .grid .grid40 {
+    flex: 0 0 40%; }
+  /* line 210, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .grid .grid33 {
+    flex: 0 0 33.3333%; }
+  /* line 213, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .grid .grid25 {
+    flex: 0 0 25%; }
+
+/* line 218, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.grid-cell {
+  flex: 1 1 0%; }
+
+/* line 222, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.flexcontainer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row; }
+
+/* line 230, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.clear:before,
+.clear:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+/* line 237, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.clear:after {
+  clear: both; }
+
+/*------------------------------------*    TYPOGRAPHY
+\*------------------------------------*/
+/* line 251, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: 700 2.15em/1.5 "Source Sans Pro"; }
+
+/* line 255, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+h2 {
+  font-size: 1.85em; }
+
+/* line 259, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+h3 {
+  font-size: 1.6em; }
+
+/* line 263, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+h4 {
+  font-size: 1.3em; }
+
+/* line 267, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+h5 {
+  font-size: 1.15em; }
+
+/* line 271, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+h6 {
+  font-size: 1.03em; }
+
+/* line 275, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+p {
+  line-height: 1.6;
+  font-size: 96%; }
+
+/* line 281, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+b,
+strong {
+  font-weight: 600; }
+
+/* line 287, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+em,
+i,
+cite {
+  font-style: italic; }
+
+/* line 291, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+blockquote {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  margin: 1.2em 10px;
+  padding: 1.9em 10px 1em; }
+  /* line 295, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  blockquote p {
+    display: inline-block;
+    font-size: .93em; }
+  /* line 299, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  blockquote cite {
+    display: block; }
+  /* line 302, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  blockquote cite:after {
+    content: "\A";
+    white-space: pre; }
+  /* line 307, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  blockquote :before,
+  blockquote :after {
+    font-size: 4em;
+    line-height: 0.1em; }
+  /* line 311, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  blockquote :before {
+    content: open-quote;
+    margin-right: 0.25em; }
+  /* line 315, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  blockquote :after {
+    content: close-quote;
+    margin-left: 0.2em;
+    vertical-align: -0.7em; }
+
+/* line 322, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+main.light blockquote {
+  background: #F8F8F8; }
+
+/* line 328, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+code,
+samp,
+kbd {
+  font-family: "Courier New", Courier, monospace, sans-serif;
+  text-align: left;
+  color: #555; }
+
+/* line 334, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+pre code {
+  line-height: 1.6em;
+  font-size: 11px; }
+
+/* line 339, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+pre {
+  border-left: 11px solid #ccc;
+  margin: 1.7em 0.7em;
+  overflow: auto;
+  width: 90%; }
+
+/* line 346, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.w400 {
+  font-weight: 400; }
+
+/* line 350, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.w500 {
+  font-weight: 500; }
+
+/* line 354, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.txtCenter {
+  text-align: center; }
+
+/* line 358, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.smHeader a {
+  color: inherit !important; }
+
+/* line 362, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.smHeader .active {
+  font-weight: 600; }
+
+/* line 366, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.smheader .active a:hover {
+  text-decoration: none; }
+
+/* line 370, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+section {
+  max-width: 34em;
+  margin: auto;
+  padding: 1em 3em; }
+
+/*------------------------------------*    COLORS
+\*------------------------------------*/
+/* line 381, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.light {
+  background: #fff;
+  color: #444; }
+
+/* line 386, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.dark {
+  background: #1f1e1e;
+  color: #E3E3E3; }
+
+/* line 391, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.black {
+  background: rgba(14, 14, 14, 0.86) url("http://nepharia.net/img/absurdity.png") repeat;
+  color: #fafafa; }
+
+/* line 396, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.red {
+  color: #f80000; }
+
+/* line 400, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.white {
+  color: #fff; }
+
+/*------------------------------------*    Border color
+\*------------------------------------*/
+/* line 411, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+#TopMenu.light,
+main.light,
+footer.light {
+  border: 1px solid #ddd;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1); }
+
+/* line 421, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+#TopMenu.dark,
+main.dark,
+footer.dark,
+#TopMenu.black,
+main.black,
+footer.black {
+  border: 1px solid #222;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.9); }
+
+/*------------------------------------*    TOPMENU
+\*------------------------------------*/
+/* line 431, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+#TopMenu {
+  height: 50px;
+  z-index: 999;
+  display: flex;
+  border-width: 2px 1px 1px;
+  border-style: solid; }
+  /* line 437, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu .dropdown-menu {
+    background: rgba(14, 14, 14, 0.86);
+    box-shadow: 2px 5px 8px -3px rgba(0, 0, 0, 0.75); }
+  /* line 442, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu ul {
+    display: inline-flex;
+    width: 100%; }
+  /* line 446, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu li {
+    padding: 0 1.4%;
+    font-size: 100%;
+    transition: linear 0.3s;
+    list-style: none; }
+  /* line 452, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu li:nth-child(1) > a > i {
+    margin: 0 3px 0 0; }
+  /* line 456, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu a,
+  #TopMenu span {
+    text-decoration: none;
+    line-height: 50px;
+    font-family: "Source Sans Pro";
+    display: inline-block; }
+  /* line 462, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu .dropdown:after {
+    font: normal 1.0em/normal FontAwesome;
+    content: "";
+    color: #eee;
+    position: relative;
+    left: 7px;
+    top: 2px; }
+  /* line 470, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu .logo {
+    -moz-transition: linear 1.35s;
+    -o-transition: linear 1.35s;
+    -webkit-transition: linear 1.35s;
+    transition: linear 1.35s;
+    padding: 0 2% 0;
+    font-size: 1.3em;
+    font-weight: 700; }
+  /* line 476, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu .logo a {
+    font-weight: 700; }
+  /* line 480, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu .logo:hover,
+  #TopMenu .search {
+    background: none !important; }
+  /* line 483, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu .icon:last-child {
+    border-right: none;
+    border-left: none; }
+  /* line 487, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu .right {
+    margin: 0 0 0 auto; }
+  /* line 490, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu input[type=search] {
+    border-right: none;
+    border-radius: 0;
+    font-family: "Source Sans Pro";
+    font-weight: 400; }
+  /* line 497, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu input[type=search],
+  #TopMenu .fa-search {
+    padding: 0.4em 0.5em 0.4em;
+    line-height: 1.3em; }
+  /* line 501, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu .fa-search {
+    border-left: none !important; }
+
+/* line 507, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+#TopMenu.light {
+  border-color: #00aadf #ddd #ddd; }
+  /* line 509, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.light a {
+    color: #303030;
+    text-shadow: 0 0 2px rgba(245, 245, 245, 0.2); }
+  /* line 513, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.light ul .icon {
+    border-left: 1px solid #E1E1E1; }
+  /* line 516, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.light ul li:hover {
+    background: #F7F7F7; }
+  /* line 519, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.light .active a {
+    color: #00aadf; }
+  /* line 522, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.light .fa {
+    color: #3e3e3e; }
+  /* line 525, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.light .logo a:hover {
+    color: #00aadf; }
+  /* line 529, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.light input[type=search],
+  #TopMenu.light .fa-search {
+    border-top: 1px solid #E1E1E1;
+    border-left: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    background: #FBFBFB;
+    color: #222; }
+  /* line 536, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.light .fa-search {
+    border-right: 1px solid #E1E1E1; }
+
+/* line 541, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+#TopMenu.dark {
+  border-color: #ff66a0 #333 #222;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.9);
+  border-top-width: 1px; }
+  /* line 545, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.dark ul .icon {
+    border-left: 1px solid rgba(53, 53, 53, 0.72); }
+  /* line 549, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.dark ul li:hover,
+  #TopMenu.dark .active {
+    background: #ff66a0; }
+  /* line 552, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.dark .logo a:hover {
+    color: #ff66a0; }
+  /* line 557, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.dark .fa,
+  #TopMenu.dark input[type=search],
+  #TopMenu.dark .fa-search {
+    color: #D7D7D7; }
+  /* line 561, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.dark input[type=search],
+  #TopMenu.dark .fa-search {
+    border-top: 1px solid #1c1c1c;
+    border-left: 1px solid #1c1c1c;
+    border-bottom: 1px solid #1c1c1c;
+    background: #151515; }
+  /* line 567, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.dark .fa-search {
+    border-right: 1px solid #1c1c1c; }
+
+/* line 572, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+#TopMenu.black {
+  border-color: #00aadf #333 #222;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.9); }
+  /* line 575, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.black a {
+    color: #fcfafa;
+    text-shadow: 0 0 2px rgba(245, 245, 245, 0.2); }
+  /* line 579, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.black ul .icon {
+    border-left: 1px solid #333; }
+  /* line 583, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.black ul li:hover,
+  #TopMenu.black .active {
+    background: #00aadf; }
+  /* line 586, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.black .logo a:hover {
+    color: #00aadf; }
+  /* line 591, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.black .fa,
+  #TopMenu.black input[type=search],
+  #TopMenu.black .fa-search {
+    color: #DDD; }
+  /* line 595, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.black input[type=search],
+  #TopMenu.black .fa-search {
+    border-top: 1px solid #333;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+    background: rgba(21, 21, 21, 0.63); }
+  /* line 601, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  #TopMenu.black .fa-search {
+    border-right: 1px solid #333; }
+
+/* line 608, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+#TopMenu a,
+.mBox a,
+.mBoxHeader li {
+  -moz-transition: linear 0.4s;
+  -o-transition: linear 0.4s;
+  -webkit-transition: linear 0.4s;
+  transition: linear 0.4s; }
+
+/*------------------------------------*    MAIN
+\*------------------------------------*/
+/* line 617, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+main {
+  margin: 30px auto 0;
+  flex-flow: column wrap;
+  border-bottom: none !important; }
+  /* line 621, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  main li {
+    font-size: 96%;
+    line-height: 1.13; }
+  /* line 634, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  main h1,
+  main h2,
+  main h3,
+  main h4,
+  main h5,
+  main h6,
+  main pre,
+  main form,
+  main label,
+  main input {
+    padding: 0 1.3%; }
+  /* line 638, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  main p,
+  main address {
+    padding: 0.2% 1.3% 0.7%; }
+  /* line 641, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  main a {
+    text-decoration: inherit; }
+  /* line 644, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  main a:hover {
+    text-decoration: underline; }
+  /* line 648, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  main ol,
+  main ul {
+    padding: 1% 3%;
+    list-style: disc; }
+  /* line 652, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  main td {
+    padding: 1.3% 16px; }
+  /* line 655, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  main .dark {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.7); }
+  /* line 658, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  main hr {
+    max-width: 99%; }
+
+/* line 664, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+main.light a {
+  color: #007acc; }
+
+/* line 671, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+main.dark a,
+main.black a {
+  color: #DAF0BA; }
+
+/*------------------------------------*    fxHeight
+\*------------------------------------*/
+/* line 681, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fxHeightS {
+  height: 45px;
+  line-height: 45px; }
+  /* line 686, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .fxHeightS h1,
+  .fxHeightS h2,
+  .fxHeightS h3 {
+    padding: 0 2%; }
+
+/* line 691, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fxHeightL {
+  height: 60px;
+  line-height: 60px; }
+  /* line 694, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .fxHeightL h3 {
+    font-family: "Open Sans";
+    font-size: 1.64em;
+    line-height: 60px; }
+  /* line 699, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .fxHeightL li {
+    line-height: 60px; }
+  /* line 703, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .fxHeightL span,
+  .fxHeightL p {
+    font-size: .96em; }
+  /* line 707, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .fxHeightL :not(h3,
+  .fa) {
+    font-size: .93em;
+    font-family: "Open Sans"; }
+
+/*------------------------------------*    LINEIN
+\*------------------------------------*/
+/* line 718, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.LineIn {
+  border-top: 1px solid rgba(102, 102, 102, 0.65);
+  border-bottom: 1px solid rgba(102, 102, 102, 0.65);
+  padding: 1.4%;
+  margin: 3px auto;
+  width: 80%; }
+  /* line 724, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .LineIn a {
+    text-decoration: inherit;
+    color: inherit; }
+  /* line 728, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .LineIn span:hover {
+    text-decoration: underline; }
+  /* line 731, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .LineIn ul li {
+    display: inline-flex;
+    padding: 0.7% 0.6%;
+    margin: 0 2px;
+    font-size: 95%; }
+
+/*------------------------------------*    COVER
+\*------------------------------------*/
+/* line 747, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.cover h1,
+.cover .FancyLinks,
+.cover .info {
+  margin: 0 3% 2%;
+  padding: 1% 2%; }
+
+/* line 751, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.cover h1 {
+  margin: 1.5% 3% 0.5%; }
+
+/* line 754, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.cover .info {
+  font-size: .91em;
+  list-style: square; }
+
+/* line 758, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.cover p {
+  font-size: .99em;
+  margin-bottom: .2em; }
+
+/* line 762, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.cover .info li {
+  padding: .7% .4%;
+  margin: 0 3%; }
+
+/* line 766, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.cover .info li:nth-child(1) {
+  margin-top: 1.3%; }
+
+/* line 769, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.cover .title {
+  font: 700 200%/48px;
+  padding: 1.7%; }
+
+/* line 773, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.cover .cw {
+  width: 442px;
+  max-width: 442px; }
+
+/* line 777, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.cover .ratings {
+  margin-left: 4px; }
+
+/* line 782, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.light .cover h1 {
+  border-bottom: 1px solid #eee;
+  color: #4c4747; }
+
+/* line 787, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.dark .cover h1 {
+  border-bottom: 1px solid rgba(53, 53, 53, 0.72);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.9);
+  color: #E0E0E0; }
+
+/* line 793, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.black .cover h1 {
+  border-bottom: 1px solid rgba(51, 49, 49, 0.77);
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.9); }
+
+/*------------------------------------*    FANCYLINKS
+\*------------------------------------*/
+/* line 803, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.FancyLinks {
+  position: relative;
+  margin: 1% 4%;
+  text-align: center; }
+  /* line 807, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .FancyLinks li {
+    display: inline-flex;
+    margin: 0 3%; }
+  /* line 811, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .FancyLinks a {
+    opacity: 0.95;
+    font-weight: 600;
+    text-decoration: none;
+    transition: linear 0.3s ease-in-out; }
+  /* line 817, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .FancyLinks a:hover {
+    opacity: 1;
+    text-decoration: none; }
+  /* line 821, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .FancyLinks i.fa {
+    margin-right: 3px; }
+
+/* line 826, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.light .FancyLinks {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee; }
+  /* line 829, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .light .FancyLinks a {
+    color: #292727; }
+  /* line 832, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .light .FancyLinks a:hover {
+    color: #007acc; }
+
+/* line 837, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.dark .FancyLinks {
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+  box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.9); }
+  /* line 841, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .dark .FancyLinks a {
+    color: #CCC9C9; }
+
+/* line 846, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.black .FancyLinks {
+  border-top: 1px solid rgba(51, 49, 49, 0.77);
+  border-bottom: 1px solid rgba(51, 49, 49, 0.77); }
+  /* line 849, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .black .FancyLinks a {
+    color: inherit; }
+
+/*.FancyLinks:after {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-right-color: #313030;
+  border-width: 15px;
+  margin-top: -15px; }*/
+/*------------------------------------*    BUTTON BT
+\*------------------------------------*/
+/* line 876, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+Button,
+.bt,
+input {
+  padding: 3.3% 14.5%;
+  border: 0 none;
+  background: #DD3131;
+  color: #F7F7F7;
+  transition: all 0.2s linear 0s;
+  cursor: pointer;
+  font: 600 100%/1 "Source Sans Pro"; }
+
+/* line 887, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+Button:hover,
+.bt:hover {
+  background: #ef3f3f; }
+
+/*------------------------------------*    MBOX
+\*------------------------------------*/
+/* line 897, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.mBoxHeader ul {
+  display: flex;
+  list-style: none;
+  padding: 0; }
+  /* line 901, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .mBoxHeader ul li {
+    flex: 1;
+    text-align: center; }
+    /* line 904, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+    .mBoxHeader ul li a {
+      text-decoration: none;
+      color: inherit;
+      display: block; }
+
+/* line 913, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+main.light .mBoxHeader ul li {
+  border-left: 1px solid rgba(42, 38, 38, 0.17); }
+
+/* line 917, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+main.black .mBoxHeader ul li {
+  border-left: 1px solid rgba(74, 69, 69, 0.2); }
+
+/* line 922, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+main.light .mBoxHeader li:hover,
+main.light .mBoxHeader .active {
+  background: #F7F7F7; }
+
+/* line 927, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+main.black .mBoxHeader li:hover,
+main.black .mBoxHeader .active {
+  background: rgba(26, 26, 26, 0.8); }
+
+/* line 931, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.mBoxes:hover > .mBox {
+  opacity: .77; }
+
+/* line 935, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.mBoxes:hover > .mBox:hover {
+  opacity: 1; }
+
+/* line 939, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.mBox {
+  height: 502px;
+  transition: opacity 0.5s ease-in-out;
+  float: left;
+  width: 25%;
+  box-sizing: border-box; }
+  /* line 945, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .mBox h4 {
+    text-align: center;
+    padding: 2.5% 2px 1%;
+    letter-spacing: 0.01em;
+    font: 700 120%/1.2 "Open Sans"; }
+  /* line 951, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .mBox p {
+    text-align: center;
+    font-family: "Source Sans Pro"; }
+  /* line 956, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .mBox button,
+  .mBox .bt {
+    display: block;
+    margin: 0 auto 1.5% auto;
+    clear: both; }
+  /* line 961, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .mBox a {
+    text-decoration: none; }
+  /* line 964, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .mBox a:hover {
+    text-decoration: none; }
+  /* line 967, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .mBox img {
+    height: 372px;
+    width: 100%; }
+
+/* line 973, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.dark .mBox {
+  background: #252525;
+  border: 1px solid rgba(51, 51, 51, 0.3); }
+
+/* line 978, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.black .mBox {
+  background: #141414;
+  border: 1px solid rgba(51, 51, 51, 0.36); }
+
+/* line 986, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.dark .mBox,
+.black .mBox,
+.dark .mBox a,
+.black .mBox a {
+  color: #f8f8f8; }
+
+/*------------------------------------*    STAR RATING
+\*------------------------------------*/
+/* line 995, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.rating {
+  direction: rtl;
+  font-size: 17px;
+  unicode-bidi: bidi-override;
+  position: relative; }
+  /* line 1000, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .rating span.star {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal; }
+    /* line 1005, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+    .rating span.star:hover {
+      cursor: pointer; }
+    /* line 1008, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+    .rating span.star:before {
+      color: #F9C8D3;
+      content: "\f006"; }
+    /* line 1013, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+    .rating span.star:hover:before,
+    .rating span.star:hover ~ span.star:before {
+      color: #EF005B;
+      content: "\f005"; }
+    /* line 1017, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+    .rating span.star:hover:after {
+      direction: ltr;
+      content: attr(title);
+      position: absolute;
+      left: 0;
+      bottom: -22px;
+      white-space: nowrap;
+      font: normal 14px/normal "Open Sans"; }
+
+/* line 1029, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.ratings {
+  width: 85px;
+  height: 17px;
+  position: relative; }
+  /* line 1034, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .ratings:before,
+  .ratings:after {
+    letter-spacing: 2px;
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  /* line 1045, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .ratings:before {
+    color: #F9C8D3;
+    content: "\f006\f006\f006\f006\f006"; }
+  /* line 1049, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .ratings:after {
+    color: #EF005B;
+    content: "\f005\f005\f005\f005\f005";
+    overflow: hidden; }
+
+/* line 1058, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.dark .ratings :after,
+.black .ratings :after {
+  color: #ff66a0; }
+
+/* line 1061, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.dark .ratings :before,
+.black .ratings :before {
+  color: #ffa9bc; }
+
+/* line 1066, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.ratings.one:after {
+  content: "\f005"; }
+
+/* line 1070, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.ratings.onehalf:after {
+  content: "\f005\f089"; }
+
+/* line 1074, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.ratings.two:after {
+  content: "\f005\f005"; }
+
+/* line 1078, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.ratings.twohalf:after {
+  content: "\f005\f005\f089"; }
+
+/* line 1082, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.ratings.three:after {
+  content: "\f005\f005\f005"; }
+
+/* line 1086, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.ratings.threehalf:after {
+  content: "\f005\f005\f005\f089"; }
+
+/* line 1090, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.ratings.four:after {
+  content: "\f005\f005\f005\f005"; }
+
+/* line 1094, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.ratings.fourhalf:after {
+  content: "\f005\f005\f005\f005\f089"; }
+
+/*------------------------------------*    FOOTER
+\*------------------------------------*/
+/* line 1104, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+footer {
+  margin-bottom: 150px;
+  text-align: center;
+  border-radius: 0 0 4px 4px; }
+  /* line 1108, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  footer a {
+    -moz-transition: linear 0.2s;
+    -o-transition: linear 0.2s;
+    -webkit-transition: linear 0.2s;
+    transition: linear 0.2s; }
+  /* line 1111, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  footer a:hover {
+    text-decoration: none !important; }
+  /* line 1114, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  footer .logo {
+    text-decoration: none; }
+    /* line 1116, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+    footer .logo h3 {
+      line-height: 66px; }
+  /* line 1120, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  footer .social {
+    border-top: 3px solid #00aadf;
+    display: flex;
+    width: 99.7%;
+    margin: 0 auto; }
+    /* line 1127, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+    footer .social .one,
+    footer .social .two,
+    footer .social .three {
+      width: 33.33%; }
+    /* line 1131, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+    footer .social .one img {
+      margin: 10px 22px; }
+    /* line 1135, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+    footer .social .two {
+      text-align: center; }
+      /* line 1137, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+      footer .social .two a {
+        outline: 0; }
+    /* line 1141, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+    footer .social .three {
+      text-align: right; }
+    /* line 1144, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+    footer .social i {
+      margin: 4% 3%; }
+
+/* line 1151, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+footer.light {
+  background: #FBFBFB; }
+  /* line 1154, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  footer.light .logo:hover,
+  footer.light a:hover {
+    color: #00aadf; }
+
+/* line 1161, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+footer.dark .logo:hover,
+footer.dark a:hover {
+  color: #ff66a0; }
+
+/* line 1164, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+footer.dark .social {
+  border-top-color: #ff66a0; }
+
+/* line 1171, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+footer.black .logo:hover,
+footer.black a:hover {
+  color: #00aadf; }
+
+/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+/* line 1188, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: top; }
+
+/* line 1196, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8020; }
+
+/* line 1203, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-skin {
+  position: relative;
+  background: rgba(64, 53, 53, 0.72);
+  color: #444;
+  text-shadow: none;
+  border-radius: 4px; }
+
+/* line 1211, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-opened {
+  z-index: 8030; }
+
+/* line 1215, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-opened .fancybox-skin {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5); }
+
+/* line 1220, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-outer,
+.fancybox-inner {
+  position: relative; }
+
+/* line 1224, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-inner {
+  overflow: hidden; }
+
+/* line 1228, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-type-iframe .fancybox-inner {
+  -webkit-overflow-scrolling: touch; }
+
+/* line 1232, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-error {
+  color: #444;
+  font: 14px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 15px;
+  white-space: nowrap; }
+
+/* line 1241, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-image,
+.fancybox-iframe {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+/* line 1247, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-image {
+  max-width: 100%;
+  max-height: 100%; }
+
+/* line 1255, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+#fancybox-loading,
+.fancybox-close,
+.fancybox-prev span,
+.fancybox-next span {
+  background-image: url("/img/fancybox_sprite.png"); }
+
+/* line 1259, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+#fancybox-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -22px;
+  background-position: 0 -108px;
+  opacity: .8;
+  cursor: pointer;
+  z-index: 8060; }
+
+/* line 1271, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+#fancybox-loading div {
+  width: 44px;
+  height: 44px;
+  background: url("/img/fancybox_loading.gif") center center no-repeat; }
+
+/* line 1277, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 8040; }
+
+/* line 1287, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-nav {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent url("/img/blank.gif");
+  -webkit-tap-highlight-color: transparent;
+  z-index: 8040; }
+
+/* line 1299, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-prev {
+  left: 0; }
+
+/* line 1303, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-next {
+  right: 0; }
+
+/* line 1307, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-nav span {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 34px;
+  margin-top: -18px;
+  cursor: pointer;
+  z-index: 8040;
+  visibility: hidden; }
+
+/* line 1318, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-prev span {
+  left: 10px;
+  background-position: 0 -36px; }
+
+/* line 1323, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-next span {
+  right: 10px;
+  background-position: 0 -72px; }
+
+/* line 1328, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-nav:hover span {
+  visibility: visible; }
+
+/* line 1332, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-tmp {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+  visibility: hidden;
+  max-width: 99999px;
+  max-height: 99999px;
+  overflow: visible !important; }
+
+/* line 1342, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-lock {
+  overflow: hidden !important;
+  width: auto; }
+
+/* line 1347, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-lock body {
+  overflow: hidden !important; }
+
+/* line 1351, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-lock-test {
+  overflow-y: hidden !important; }
+
+/* line 1355, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 8010;
+  background: url("/img/fancybox_overlay.png"); }
+
+/* line 1365, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-overlay-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+
+/* line 1371, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-lock .fancybox-overlay {
+  overflow: auto;
+  overflow-y: scroll; }
+
+/* line 1376, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-title {
+  visibility: hidden;
+  font: normal 13px/20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050; }
+
+/* line 1384, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-opened .fancybox-title {
+  visibility: visible; }
+
+/* line 1388, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-title-float-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-bottom: -35px;
+  z-index: 8050;
+  text-align: center; }
+
+/* line 1397, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-title-float-wrap .child {
+  display: inline-block;
+  margin-right: -100%;
+  padding: 2px 20px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  text-shadow: 0 1px 2px #222;
+  color: #FFF;
+  font-weight: bold;
+  line-height: 24px;
+  white-space: nowrap; }
+
+/* line 1410, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-title-outside-wrap {
+  position: relative;
+  margin-top: 10px;
+  color: #fff; }
+
+/* line 1416, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-title-inside-wrap {
+  padding-top: 10px; }
+
+/* line 1420, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+.fancybox-title-over-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8); }
+
+@media all and (max-width: 980px) and (min-width: 810px) {
+  /* line 1430, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .mBox {
+    height: 475px; }
+  /* line 1433, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .mBox img {
+    height: 340px; } }
+
+@media all and (max-width: 809px) and (min-width: 675px) {
+  /* line 1439, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .mBox {
+    height: 405px; }
+  /* line 1442, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .mBox img {
+    height: 284px; }
+  /* line 1445, F:/OneDrive/Projects/CinemaDesign/css/main.scss */
+  .mBox h4 {
+    font-size: 100%; } }
+
+/*@media all and (max-width:775px) and (min-width:1px){
+	.mBox img{
+		height:277px
+	}
+}*/
+
+/*# sourceMappingURL=main.css.map */
