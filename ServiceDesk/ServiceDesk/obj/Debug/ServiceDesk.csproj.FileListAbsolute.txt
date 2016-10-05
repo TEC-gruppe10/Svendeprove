@@ -105,3 +105,4 @@ C:\Users\krku\Documents\GitHub\Svendeprove\ServiceDesk\ServiceDesk\bin\System.We
 C:\Users\krku\Documents\GitHub\Svendeprove\ServiceDesk\ServiceDesk\bin\System.Web.WebPages.xml
 C:\Users\krku\Documents\GitHub\Svendeprove\ServiceDesk\ServiceDesk\bin\System.Web.WebPages.Deployment.xml
 C:\Users\krku\Documents\GitHub\Svendeprove\ServiceDesk\ServiceDesk\bin\System.Web.WebPages.Razor.xml
+C:\Users\Ruben\Documents\GitHub\Svendeprove\ServiceDesk\ServiceDesk\bin\MySql.Data.dll

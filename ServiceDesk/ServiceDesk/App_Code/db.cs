@@ -38,6 +38,16 @@ namespace ServiceDesk
             var conn = new MySqlConnection();
             conn.ConnectionString = DB_CONN;
 
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+            
+
             return conn;
         }
         #endregion
@@ -54,8 +64,10 @@ namespace ServiceDesk
         {            
             using (var conn = DefaultConnection())
             {
-                var cmd = new MySqlCommand(sqlcmd, conn);                
-                conn.Open();
+                if (conn == null)
+                    return new List<string[]>();
+
+                var cmd = new MySqlCommand(sqlcmd, conn);     
 
                 var reader = cmd.ExecuteReader();
                 if (!reader.HasRows)
@@ -125,6 +137,12 @@ namespace ServiceDesk
         #endregion
 
         #region CheckUser
+        /// <summary>
+        /// Check for valid user.
+        /// </summary>
+        /// <param name="email"></param>
+        /// <param name="password"></param>
+        /// <returns></returns>
         public static int CheckUser(string email, string password)
         {
             var sqlcmd = "SELECT type FROM bruger WHERE email = '";
@@ -135,7 +153,9 @@ namespace ServiceDesk
 
             using (var conn = DefaultConnection())
             {
-                conn.Open();
+                if (conn == null)
+                    return 0;
+
                 var cmd = new MySqlCommand(sqlcmd, conn);
                 var reader = cmd.ExecuteReader();
                 if (reader.HasRows)
